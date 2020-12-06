@@ -27,7 +27,7 @@ def my_form_post():
     pred = model.predict(arr)
     print(pred)
 
-    return render_template("post.html", prediction = pred[0])
+    return render_template("post.html", prediction = pred[0].round(4))
 
 if __name__ == '__main__':
     app.run()
