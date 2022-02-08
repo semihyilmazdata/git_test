@@ -30,4 +30,4 @@ def my_form_post():
     return render_template("post.html", prediction = pred[0].round(4))
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0")
